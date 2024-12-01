@@ -1,1 +1,1 @@
-# SDV_Activities
+ Scientefic Data Visualization Project
