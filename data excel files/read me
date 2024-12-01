@@ -1,0 +1,7 @@
+I have defined a Python function in Google Colab to convert .pgn data of around 1000 games to Excel sheets with required columns, which are used in Tableau to show the visuals and results.
+Below are the excel files with the columns and the numbered metrics that are required for this visualization:
+	Games.xls - game_id ; lichess_game_id ; site ; date ; round ; white ; black ; white_elo ; black_elo ; winner; pgn ; eco.
+
+	Players.xls - player_id ; name
+	Moes.xls - move_id ; game_id ; move_number; move.
+
