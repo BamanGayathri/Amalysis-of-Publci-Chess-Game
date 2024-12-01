@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='CastlingImpactOnOutcomes (CastlingImpactOnOutcomes)' inline='true' name='federated.022o1ae1w293al1059rxe01hnawx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CastlingImpactOnOutcomes' name='excel-direct.1258v710e6c17d17qdy9h08rg3y6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/gayathribaman/Desktop/sdv/q6/CastlingImpactOnOutcomes.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1258v710e6c17d17qdy9h08rg3y6' name='CastlingImpactOnOutcomes' table='[CastlingImpactOnOutcomes$]' type='table'>
+          <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+            <column datatype='integer' name='game_id' ordinal='0' />
+            <column datatype='string' name='is_castle' ordinal='1' />
+            <column datatype='integer' name='Draw' ordinal='2' />
+            <column datatype='integer' name='Loss' ordinal='3' />
+            <column datatype='integer' name='Win' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1258v710e6c17d17qdy9h08rg3y6' name='CastlingImpactOnOutcomes' table='[CastlingImpactOnOutcomes$]' type='table'>
+          <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+            <column datatype='integer' name='game_id' ordinal='0' />
+            <column datatype='string' name='is_castle' ordinal='1' />
+            <column datatype='integer' name='Draw' ordinal='2' />
+            <column datatype='integer' name='Loss' ordinal='3' />
+            <column datatype='integer' name='Win' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E5:no:A1:E5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_castle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[is_castle]</local-name>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias>is_castle</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Draw</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Draw]</local-name>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias>Draw</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Loss]</local-name>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias>Loss</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Win]</local-name>
+            <parent-name>[CastlingImpactOnOutcomes]</parent-name>
+            <remote-alias>Win</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='CastlingImpactOnOutcomes' datatype='table' name='[__tableau_internal_object_id__].[CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179]' role='measure' type='quantitative' />
+      <column caption='Game Id' datatype='integer' name='[game_id]' role='dimension' type='ordinal' />
+      <column caption='Is Castle' datatype='string' name='[is_castle]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CastlingImpactOnOutcomes' id='CastlingImpactOnOutcomes_7E97D0E36E9F4C35B2BEE7E8BB088179'>
+            <properties context=''>
+              <relation connection='excel-direct.1258v710e6c17d17qdy9h08rg3y6' name='CastlingImpactOnOutcomes' table='[CastlingImpactOnOutcomes$]' type='table'>
+                <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='game_id' ordinal='0' />
+                  <column datatype='string' name='is_castle' ordinal='1' />
+                  <column datatype='integer' name='Draw' ordinal='2' />
+                  <column datatype='integer' name='Loss' ordinal='3' />
+                  <column datatype='integer' name='Win' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CastlingImpactOnOutcomes (CastlingImpactOnOutcomes)' name='federated.022o1ae1w293al1059rxe01hnawx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.022o1ae1w293al1059rxe01hnawx'>
+            <column datatype='integer' name='[Draw]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Loss]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Win]' role='measure' type='quantitative' />
+            <column caption='Is Castle' datatype='string' name='[is_castle]' role='dimension' type='nominal' />
+            <column-instance column='[is_castle]' derivation='None' name='[none:is_castle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Draw]' derivation='Sum' name='[sum:Draw:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loss]' derivation='Sum' name='[sum:Loss:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Win]' derivation='Sum' name='[sum:Win:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.022o1ae1w293al1059rxe01hnawx].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.022o1ae1w293al1059rxe01hnawx].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.022o1ae1w293al1059rxe01hnawx].[sum:Loss:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.022o1ae1w293al1059rxe01hnawx].[sum:Win:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]' />
+            </encodings>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.022o1ae1w293al1059rxe01hnawx].[sum:Draw:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.022o1ae1w293al1059rxe01hnawx].[sum:Loss:qk] + ([federated.022o1ae1w293al1059rxe01hnawx].[sum:Win:qk] + [federated.022o1ae1w293al1059rxe01hnawx].[sum:Draw:qk]))</rows>
+        <cols>[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]</cols>
+      </table>
+      <simple-id uuid='{FF3BA35F-54A5-448C-9CE8-A6D69EC87B67}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.022o1ae1w293al1059rxe01hnawx].[none:is_castle:nk]</field>
+            <field>[federated.022o1ae1w293al1059rxe01hnawx].[sum:Loss:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AF273672-535A-4206-884E-16934F1EC07A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='338'>
+      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
+      57iVCxcueB8nJCR867qFhYV3bL/+jJAiYISHh2vFihXKzs5WSkqK0tPTlZGRoevXrys3N1fz
+      589XUlKSHn744W/cRqdOnbyPP/74Y02cOLFO+/7444+9ER0wYIDi4+P1yCOPKDIyUg6HQ6+/
+      /ro2b95c62snTpyo+Ph4paen67PPPlNqaqpyc3Pldrv1wQcfqKSkRK+99tpt/E18u5uPcrt3
+      7/6tR73cAvU1QoqAExUVpaioKE2fPl0ul0tJSUlas2aNysvL9cknn2jOnDnf+NouXbooKipK
+      2dnZSktL0+HDh9W3b99b7nPTpk2SpMjISCUkJCg4OPi2Zm7SpImGDh2qoUOHSpL++9//6tVX
+      X1V2dra2bdum3/3ud2rUqOY/5+9yA/3N51x/9KMf1fm+00DGxSYEBKfT6f3KuJuFhoZqxowZ
+      Cg0NlaRqn52vjcPh0Lx587w/L1q06Buv9h84cEAej8e7f+nrm/j/f0Tdbvc33t954MAB72f3
+      b9azZ0+NGTNG0tefkrr59a1atfI+3rVr17f+eWoTGRnpjfJHH32kGzdu1Lqey+VSdnb2bW//
+      XkRIERC+/PJLPf3001qwYIHS0tJ09epVSV+f41u9erVcLpekr7+X81Z++MMfer+i78KFC5o1
+      a5befPNNbdu2Tbt379aGDRv09NNPa86cOd5PT1VdlDpx4oQ2bdrk/ahncnKyJk+erD179tS6
+      rxUrVmjChAlKSkrSmTNn5Ha7VVFRoSNHjuj999+X9PWV/QcffND7mps/HbV582Zt2LBB2dnZ
+      yszMVFZW1i3/fK1bt9bkyZO9fz8zZ85Uenq6iouLVVJSoqNHj2rNmjUaP358tftYAxlv7RFQ
+      9uzZ441W06ZNde3aNe+y8PBwjRw5sk7bWblypRYvXqzt27fL5XLp/fff94atNqNGjfLe2/nH
+      P/5Rf/rTn6pdoa+6Cl4bp9Op5cuXa/ny5QoJCZGkautOnTq12vpdu3ZVdHS0Dhw4IKfTqWXL
+      lnmXTZs2TfPnz7/ln2/27NlKSUnR2bNnlZmZqblz597yNYGMI1IEhOjoaL388svq0aOH97mb
+      IzpgwAAlJCTU+XaisLAwvfHGG/rNb36j3r17q3HjxtWWh4eHa+bMmd63yKNHj9b06dO9t1i5
+      3W45HA717t1bf/3rXzVu3DhJqnGec9GiRZo4caL31EN5ebk3oi1atNC8efM0a9asGvMtXrxY
+      gwYNqvF8XW7xqtr2xo0b9dRTT9V6R0CnTp30wgsvaMaMGXXa3r0uyFN1Egd3tfT0dEm6rdtt
+      ULuioiLl5+ersLBQLVu2VKdOndS+fXvTNsvLy5WVlSWXy6W2bduqXbt2tUbr/PnzOn78uIKC
+      gtSvXz+1aNGiTtsvKytTXl6e8vPzVV5ervbt2ysqKuqWX9p84cIF5eXlqbKyUq1bt9bDDz9c
+      55hW8Xg8unDhggoLCxUSEqIOHTqoefPmt7WNex0h9ROEFLh78dYeAIwIKQAYEVIAMCKkAGBE
+      SAHAiJACgBEhBQAjQgoARuYb8qtuFAeAQMWXlvgRPtUE3J3MIeUfd8PgyB+4e3GOFACMCCkA
+      GBFSADAipABgREgBwIiQAoARIQUAI27IvwM8Ho8KCwuVk5Oj3NxcffXVV3rwwQcVFRWlRx99
+      1NfjAahnhNQoPz9fSUlJOn36dK3LIyMjNXfuXLVu3bqBJwPQUAipwd69e7VhwwZVVlbqe9/7
+      nnr37q2uXbsqJCREX3zxhQ4cOKCcnBz97W9/00svvXTbv70RgH8gpAY5OTm67777NG3aNEVH
+      R1dbFhERobi4OC1btkynTp3S2bNn9dBDD/loUgD1iZAa9OzZU+PGjfvGt+3BwcGKjY3VqVOn
+      lJubS0iBexQhNajLF7a4XC5JUtOmTet7HAA+wkm7enT16lVt375dwcHBioyM9PU4AOoJR6T1
+      5MKFC1q1apWKi4s1atQo3X///b4eCUA9IaT14PPPP9fGjRtVVlamH/zgB3riiSd8PRKAekRI
+      76DS0lKtX79e6enpCg4O1uTJkxUXF+frsQDUM0J6h+Tm5mr16tW6fPmywsPDNWvWLM6LAgGC
+      kN4Bhw4d0t///neVl5dryJAheuqppxQSEuLrsQA0EEJqlJOTo7Vr16qiokKPP/64nnzySV+P
+      BKCBEVKDGzduaM2aNaqoqND48eM1YcIEX48EwAe4j9QgPT1dTqdTvXv3JqJAACOkBvv375ck
+      DRkyxMeTAPAl3tobFBUVSZL27dvnjeo3GTRokPr3798QYwFoYITUoLi4WJKUmZl5y3Xbt29P
+      SIF7VJDH4/H4egjcWnp6ep2+JAVAw+McKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQU
+      AIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJAC
+      gBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIA
+      MCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoA
+      RoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHA
+      iJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAY
+      EVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAj
+      QgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBE
+      SAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwI
+      KQAYEVIAMCKkAGBESAHAiJACgBEhBQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAiJACgBEh
+      BQAjQgoARoQUAIwIKQAYEVIAMCKkAGBESAHAqJGvB7hdGRkZunbtmrp166Z27dp5nz948KAS
+      EhKUnZ2tli1baurUqfrZz36moKAgH04LIBD4VUiLi4s1b948VVZWasuWLd7nL168qPnz5+va
+      tWve9ZYuXaorV67o2Wef9dW4AAKEX72137lzpyoqKvTYY49VOxp99913de3aNXXu3FnLli3T
+      ggUL5HA4tG7dOjmdTh9ODCAQ+FVIT506JUnq06eP9zmPx6OdO3dKkhYsWKDhw4dr6tSpGjly
+      pMrKynTw4EGfzAogcPhVSC9duiRJ6ty5s/e5rKwsFRYWKjQ0VIMGDfI+36tXL0nSuXPnGnZI
+      AAHHr0LapEmTGs/t379fkhQdHa1Gjf7vlG9xcbEkqXHjxg0zHICA5Vch7dChgyQpJSVFkuR2
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
